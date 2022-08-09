@@ -1,0 +1,135 @@
+{
+	"_comment": "MLP2 (ReLU): tests for const SNR=0:10:50 dB and learning rate 1E-06 mode lin/lin_0/log",
+	"training_data": [
+		{
+			"skip": false,
+			"mode": "synthesis",
+			"rng_state_filename": "../const_SNR_2022_03_23.seed",
+			"tag": "synth_SNR_0",
+			"reload": 1,
+			"SNR_dB": [0, 0],
+			"no_of_segments": 5000,
+			"Fs": 8000, 
+			"segment_length": 500, 
+			"silence_length": 0, 
+			"F0_min": 50, 
+			"F0_max": 400
+		},	
+		{
+			"skip": false,
+			"mode": "synthesis",
+			"rng_state_filename": "../const_SNR_2022_03_23.seed",
+			"tag": "synth_SNR_10",
+			"reload": 1,
+			"SNR_dB": [10, 10],
+			"no_of_segments": 5000,
+			"Fs": 8000, 
+			"segment_length": 500, 
+			"silence_length": 0, 
+			"F0_min": 50, 
+			"F0_max": 400
+		},	
+		{
+			"skip": false,
+			"mode": "synthesis",
+			"rng_state_filename": "../const_SNR_2022_03_23.seed",
+			"tag": "synth_SNR_20",
+			"reload": 1,
+			"SNR_dB": [20, 20],
+			"no_of_segments": 5000,
+			"Fs": 8000, 
+			"segment_length": 500, 
+			"silence_length": 0, 
+			"F0_min": 50, 
+			"F0_max": 400
+		},	
+		{
+			"skip": false,
+			"mode": "synthesis",
+			"rng_state_filename": "../const_SNR_2022_03_23.seed",
+			"tag": "synth_SNR_30",
+			"reload": 1,
+			"SNR_dB": [30, 30],
+			"no_of_segments": 5000,
+			"Fs": 8000, 
+			"segment_length": 500, 
+			"silence_length": 0, 
+			"F0_min": 50, 
+			"F0_max": 400
+		},	
+		{
+			"skip": false,
+			"mode": "synthesis",
+			"rng_state_filename": "../const_SNR_2022_03_23.seed",
+			"tag": "synth_SNR_40",
+			"reload": 1,
+			"SNR_dB": [40, 40],
+			"no_of_segments": 5000,
+			"Fs": 8000, 
+			"segment_length": 500, 
+			"silence_length": 0, 
+			"F0_min": 50, 
+			"F0_max": 400
+		},	
+		{
+			"skip": false,
+			"mode": "synthesis",
+			"rng_state_filename": "../const_SNR_2022_03_23.seed",
+			"tag": "synth_SNR_50",
+			"reload": 1,
+			"SNR_dB": [50, 50],
+			"no_of_segments": 5000,
+			"Fs": 8000, 
+			"segment_length": 500, 
+			"silence_length": 0, 
+			"F0_min": 50, 
+			"F0_max": 400
+		}
+	],
+	"dataset_options": [ 
+		{
+			"FB_data power normalization mode": "lin",
+			"FB_data frequency normalization mode": "lin_0",
+			"FB_data clipping mode": null, 
+			"maintain data continuity": false, 
+			"shuffle_data": true,
+			"FB_data_no_of_inputs": 40
+		}
+	],
+	"trainer_options": [
+				
+		{
+			"trainer_config": {
+				"subpath": "const_SNR_test_2022_03_23_MLP2/",
+				"folder_prefix": "MLP2_",
+				"folder_name": "",
+				"filename_prefix": "epoch_",
+				"comment": "Note to be stored with model data",
+				"no_of_epochs": 350,
+				"overwrite": false,
+				"shuffle_data": true,
+				"batch_size": 128,
+				"learning_rate": 0.000001
+			},
+			"labels transformer options": {
+				"mode": "log", 
+				"F0_ref_min": 50, 
+				"F0_ref_max": 400, 
+				"use_F0_too_low_class": false
+			},
+			"model_config": {
+				"type": "MLP_multilayer", 
+				"parameters": [ 
+					["Linear", 250],
+					["ReLU"],
+					["Linear", 500],
+					["ReLU"],
+					["Linear", null]
+				],
+				"no_of_inputs": 40,
+				"no_of_classes": 351
+			}
+		}
+
+	]
+}

@@ -1,0 +1,1 @@
+python train_model.py "./configs/tr_cfg_test_SNR_100_log_MLP2.json"	

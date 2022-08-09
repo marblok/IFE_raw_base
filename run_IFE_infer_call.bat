@@ -1,0 +1,1 @@
+python IFE_infer.py "./test_data/KeelePitch/forValidation/" "./output_data/models/const_SNR_test_2022_03_23_MLP2/MLP2_lin_lin_0_log_N=351_False_synth_SNR_10_lr=1e-06/epoch_349" "./test_results/KeelePitch/const_SNR_test_2022_03_23_MLP2/" mat

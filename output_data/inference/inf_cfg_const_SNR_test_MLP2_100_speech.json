@@ -1,0 +1,127 @@
+{
+	"validation_data": [
+		{
+			"skip": false,
+			"global_inference_output_data_path": "const_SNR_test_MLP2_100/f1nw0000/",
+			"mode": "file",
+			"root_path": "./test_data/KeelePitch/",
+			"subpath": "forValidation/",
+			"F0_ref_filename": "f1nw0000.csv",
+			"WAV_filename": "f1nw0000.wav"
+		},
+		{
+			"skip": false,
+			"global_inference_output_data_path": "const_SNR_test_MLP2_100/f2nw0000/",
+			"mode": "file",
+			"root_path": "./test_data/KeelePitch/",
+			"subpath": "forValidation/",
+			"F0_ref_filename": "f2nw0000.csv",
+			"WAV_filename": "f2nw0000.wav"
+		},
+		{
+			"skip": false,
+			"global_inference_output_data_path": "const_SNR_test_MLP2_100/f3nw0000/",
+			"mode": "file",
+			"root_path": "./test_data/KeelePitch/",
+			"subpath": "forValidation/",
+			"F0_ref_filename": "f3nw0000.csv",
+			"WAV_filename": "f3nw0000.wav"
+		},
+		{
+			"skip": false,
+			"global_inference_output_data_path": "const_SNR_test_MLP2_100/f4nw0000/",
+			"mode": "file",
+			"root_path": "./test_data/KeelePitch/",
+			"subpath": "forValidation/",
+			"F0_ref_filename": "f4nw0000.csv",
+			"WAV_filename": "f4nw0000.wav"
+		},
+		{
+			"skip": false,
+			"global_inference_output_data_path": "const_SNR_test_MLP2_100/f5nw0000/",
+			"mode": "file",
+			"root_path": "./test_data/KeelePitch/",
+			"subpath": "forValidation/",
+			"F0_ref_filename": "f5nw0000.csv",
+			"WAV_filename": "f5nw0000.wav"
+		},
+
+		{
+			"skip": false,
+			"global_inference_output_data_path": "const_SNR_test_MLP2_100/m1nw0000/",
+			"mode": "file",
+			"root_path": "./test_data/KeelePitch/",
+			"subpath": "forValidation/",
+			"F0_ref_filename": "m1nw0000.csv",
+			"WAV_filename": "m1nw0000.wav"
+		},
+		{
+			"skip": false,
+			"global_inference_output_data_path": "const_SNR_test_MLP2_100/m2nw0000/",
+			"mode": "file",
+			"root_path": "./test_data/KeelePitch/",
+			"subpath": "forValidation/",
+			"F0_ref_filename": "m2nw0000.csv",
+			"WAV_filename": "m2nw0000.wav"
+		},
+		{
+			"skip": false,
+			"global_inference_output_data_path": "const_SNR_test_MLP2_100/m3nw0000/",
+			"mode": "file",
+			"root_path": "./test_data/KeelePitch/",
+			"subpath": "forValidation/",
+			"F0_ref_filename": "m3nw0000.csv",
+			"WAV_filename": "m3nw0000.wav"
+		},
+		{
+			"skip": false,
+			"global_inference_output_data_path": "const_SNR_test_MLP2_100/m4nw0000/",
+			"mode": "file",
+			"root_path": "./test_data/KeelePitch/",
+			"subpath": "forValidation/",
+			"F0_ref_filename": "m4nw0000.csv",
+			"WAV_filename": "m4nw0000.wav"
+		},
+		{
+			"skip": false,
+			"global_inference_output_data_path": "const_SNR_test_MLP2_100/m5nw0000/",
+			"mode": "file",
+			"root_path": "./test_data/KeelePitch/",
+			"subpath": "forValidation/",
+			"F0_ref_filename": "m5nw0000.csv",
+			"WAV_filename": "m5nw0000.wav"
+		}
+
+
+		
+	],
+	"dataset_options": [ 
+		{
+			"maintain data continuity": false, 
+			"shuffle_data": false
+		}
+	],
+	"inferer_options": [
+		{
+			"skip": false,
+			"root_path": "./output_data/models/",
+			"inferer_configs": [ 
+				{
+					"overwrite": false,
+					"model_files_cfg": {
+						"subpath": "const_SNR_test_MLP2_100/",
+						"folder_prefix": "MLP2_lin_lin_0_log_N=100_",
+						"folder_name": "", "_comment": "process for all subfolders in subpath",
+						"filename_prefix": "epoch_",
+						"epochs_indexes": "0::", "_comment2": "process for all epochs",
+						"batch_size": 128
+					},
+					"labels transformer options": {
+					},
+					"model_config": {
+					}
+				}
+			]
+		}
+	]
+}

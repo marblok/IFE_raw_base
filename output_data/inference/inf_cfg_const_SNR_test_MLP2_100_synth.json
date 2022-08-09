@@ -1,0 +1,49 @@
+{
+	"validation_data": [
+		{
+			"skip": false,
+			"global_inference_output_data_path": "const_SNR_test_MLP2_100/synth{SNR_dB}/",
+			"mode": "synthesis",
+			"rng_state_filename": "../rng_state.entropy",
+			"reload": 1,
+			"SNR_dB_tmp": [-10, 50, 5],
+			"SNR_dB": [10, 40, 30],
+			"no_of_segments": 1000,
+			"Fs": 8000, 
+			"segment_length": 500, 
+			"silence_length": 0, 
+			"F0_min": 50, 
+			"F0_max": 400
+		}
+		
+	],
+	"dataset_options": [ 
+		{
+			"maintain data continuity": false, 
+			"shuffle_data": false
+		}
+	],
+	"inferer_options": [
+		{
+			"skip": false,
+			"root_path": "./output_data/models/",
+			"inferer_configs": [ 
+				{
+					"overwrite": false,
+					"model_files_cfg": {
+						"subpath": "const_SNR_test_MLP2_100/",
+						"folder_prefix": "MLP2_lin_lin_0_log_N=100_",
+						"folder_name": "", "_comment": "process for all subfolders in subpath",
+						"filename_prefix": "epoch_",
+						"epochs_indexes": "0::", "_comment2": "process for all epochs",
+						"batch_size": 128
+					},
+					"labels transformer options": {
+					},
+					"model_config": {
+					}
+				}
+			]
+		}
+	]
+}

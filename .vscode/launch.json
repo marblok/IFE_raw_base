@@ -1,0 +1,58 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+            //"preLaunchTask": "conda-IFE"
+        },
+        {
+            "name": "Python: infer_model",
+            "type": "python",
+            "request": "launch",
+            "program": "infer_model.py",
+            "args": [
+                //"./configs/inferer_config_example.json"
+                //"./configs/inf_cfg_2022_01_13_conv_SNR.json"
+                //"./output_data/inference/KSTiT_reload_test_2022_04_20/inf_cfg_KSTiT_reload_test_2022_04_20_MLP2c_speech.json"
+                "./output_data/inference/const_SNR_test_2022_03_23_MLP2_A/inf_cfg_const_SNR_test_2022_03_23_MLP2_A.json"
+            ],
+            "console": "integratedTerminal",
+        },
+        {
+            "name": "Python: train_model",
+            "type": "python",
+            "request": "launch",
+            "program": "train_model.py",
+            "args": [
+                // "./configs/tr_cfg_2022_03_05_test_SNR_Conv_tanh_351_rand_SNR.json"
+                //"./configs/tr_cfg_2022_06_02_const_SNR_351_log_10_Conv.json"
+                "./configs/tr_cfg_test_SNR_100_log_MLP2.json"
+                //"./configs/trainer_config_example.json"
+                //"./configs/trainer_config_example_multi_2.json"
+            ],
+            "console": "integratedTerminal",
+        },
+        {
+            "name": "Python: IFE_infer",
+            "type": "python",
+            "request": "launch",
+            "program": "IFE_infer.py",
+            "args": [
+                "d:/M_Blok/GitHub/2022_06_07_PTDB-TUG_corpus_processing/SPEECH DATA PROCESSED/MALE/",
+                // "../HSI_data/KeelePitch/forValidation", 
+                // "../HSI_data/KeelePitch/forValidation/f5nw0000.wav", 
+                "./output_data/models/const_SNR_test_2022_05_20_Conv/Conv_Tanh_CMPO_smoothing_0.9_lin_lin_0_log_N=351_False_synth_SNR_10_lr=1e-06/epoch_249",
+                "d:/M_Blok/GitHub/2022_06_07_PTDB-TUG_corpus_processing/SPEECH DATA PROCESSED/IFE_outputs/MALE/"
+            ],
+            "console": "integratedTerminal",
+        }
+    ]
+}

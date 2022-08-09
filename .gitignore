@@ -1,0 +1,7 @@
+CQFB_F_min=50_FB_smooth=delay_CMPO_smooth=none_FB2CMPO_sr=1.00_F_max=1050_K=20_q=2.00_Fs=8000.mat
+requirements.txt.bak
+requirements.txt.old
+run_IFE_infer_call.bat.bak
+run_train_model_call.bat.bak
+*.pyc
+*.log

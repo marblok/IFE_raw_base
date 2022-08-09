@@ -1,0 +1,22 @@
+# import numpy as np
+
+class ModelBinaryAttributes():
+    VERSION = "model_file_version"
+    MODEL_STATE_DICT = "model_state_dict"
+    OPTIMIZER_STATE_DICT = "optimizer_state_dict"
+    EPOCH = "epoch"
+    LOSS = "loss"
+    ACCURACY = "accuracy"
+    ACCURACY_TABLE = "accuracy_table"
+    #CLASS_NUMBER = "class_number"
+    #MIN_CLASS_VALUE = "min_class_value"
+    #MAX_CLASS_VALUE = "max_class_value"
+    #EDGES_LIST = "edges_list"
+    #F0_TOO_LOW_CLASS = "F0_too_low_class"
+    TRAINING_DATASET_OPTIONS = "training_dataset_options"
+    TRAINING_DATASET_SNR = "training_dataset_SNR_dB"
+    DATASET_OPTIONS = "dataset_options" 
+    DATASET_OPTIONS_OLD = "load_options" 
+    LABEL_TRANSFORMER_OPTIONS = "label_transformer_options"
+    TRAINER_CONFIG = "trainer_config"
+    MODEL_CONFIG = "model_config"

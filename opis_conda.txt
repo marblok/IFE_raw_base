@@ -1,0 +1,29 @@
+Anaconda Powershell Promt (Miniconda3)
+
+conda init powershell
+
+<restart>
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+CTRL+SHIFT+P
+Preferences: Open Settings (JSON)
+    "python.terminal.activateEnvironment": true,
+
+In terminal
+conda activate IFE 
+
+CTRL+SHIFT+P
+Python: Select itnerpreter
+select one from environment
+
+
+
+
+
+# zmiana katalogu dla profilu powershell użytkownika
+New-ItemProperty 
+  'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders' 
+  Personal -Value 'Your New Path Here' -Type ExpandString -Force
+
+New-ItemProperty 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders' Personal -Value 'c:\Users\Marek\Documents\WindowsPowerShell\' -Type ExpandString -Force
