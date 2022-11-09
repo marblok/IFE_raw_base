@@ -95,7 +95,7 @@ def process_audio(filename_in = None, x  = None, no_of_filters = 20, AFE_cfg = N
                    "filter_bank_smoothing_mode": "delay",
                    "CMPO_smoothing_mode": "none",
                    "FB_to_CMPO_smoothing_factor": 1.0} # full FB smoothing/delay
-        raise Exception("please provide AFE_cfg param")
+        logging.info("WARNING: please provide AFE_cfg param")
     else:
         if "FB_to_CMPO_smoothing_factor" not in AFE_cfg:
             AFE_cfg["FB_to_CMPO_smoothing_factor"] = 1.0

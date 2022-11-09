@@ -2,6 +2,7 @@ from timeit import default_timer as timer
 import logging
 
 from data_processor.dataset.ife_dataset import IFEDataset
+from utils.log_config import LogConfig
 from vowel_synthesis.vowels_synthesizer import vowels_synthesizer
 from utils.AFE.process_audio import process_audio
 
@@ -19,7 +20,10 @@ def test_AFE():
     #     filename_out = None
 
     # filename_wav = "d:/M_Blok/GitHub/HSI_data/training/Interspeech_2021/15000events_50-400Hz_length500ms_gaps0ms.wav"
-    filename_wav = "d:/M_Blok/GitHub/HSI_data/training/testowe/15000events_50-400Hz_length500ms_gaps0ms.wav"
+    filename_wav = "test2_snr_40.wav"
+
+    log_cfg = LogConfig()
+    log_cfg.init_logging("AFE_test")
 
     logging.info('START:')
     # start = timer()
