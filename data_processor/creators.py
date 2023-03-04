@@ -88,8 +88,9 @@ def get_SNR_dB(rng_state_filename, SNR_index, SNR_dB_range, vs = None):
         SNR_rng_state.init(vs.rng_seed, SNR_index)
 
     # randomize SNR from given range
-    if type(SNR_dB_range) == np.float64:
-        SNR_dB = SNR_dB_range
+    #if (type(SNR_dB_range) == np.float64) or (type(SNR_dB_range) == float):
+    if not hasattr(SNR_dB_range, "__len__"):
+        SNR_dB = np.float64(SNR_dB_range)
     else:
         if SNR_dB_range[0] == SNR_dB_range[1]:
             SNR_dB = SNR_dB_range[0]
