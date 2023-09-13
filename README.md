@@ -1,6 +1,9 @@
 # HSI
 HSI Neural Networks
 
+[1] Blok, M., Banaś, J., & Pietrolaj, M. (2021, July). IFE: NN-aided Instantaneous Pitch Estimation. In 2021 14th International Conference on Human System Interaction (HSI) (pp. 1-7). IEEE.
+[2] Blok, M., Banaś, J., & Pietrołaj, M. (2022). Strategie treningu neuronowego estymatora częstotliwości tonu krtaniowego z użyciem generatora syntetycznych samogłosek. Przegląd Telekomunikacyjny+ Wiadomości Telekomunikacyjne, 604-607.
+
 # Requirements & installation:
 1. Install Miniconda3 for Windows: https://docs.conda.io/en/latest/miniconda.html
 2. Create new conda environment:
